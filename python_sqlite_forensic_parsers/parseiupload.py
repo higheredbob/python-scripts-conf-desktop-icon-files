@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+"""this is for an andoird db, iupload. Common among samsung phones.
+"""
+
 import datetime
 import sqlite3 as sql
 import argparse
