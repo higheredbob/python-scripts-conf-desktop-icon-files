@@ -2,6 +2,13 @@
 # Import the standard library module sqlite3
 # This type of import allows you to abbreviate the interface
 # to sql methods.   i.e. sql.connect  vs sqlite3.connect
+
+
+# this file is only partially written by me, with most of the code coming 
+# from another gentleman, so credit to him, which I don't remember his 
+# name, since it was years ago...
+
+
 import sqlite3 as sql
 import sys
 import csv
