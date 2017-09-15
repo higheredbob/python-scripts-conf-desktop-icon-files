@@ -1,5 +1,17 @@
 #!/usr/bin/env python
 
+"""This script is for the mozilla history/places file, and utilizes
+pandas for the join statements, the idea did come from Jon Glass,
+but he utilized sqlite instead of pandas.
+
+This script was never fully finished, as such you have to modify the variables
+that go into ajoin and bjoin, to get full output if so desired from the database
+being parsed. I believe the two joins utilized at the time, returned the highest
+value information. I could be wrong, it's been a while, so I would either avoid
+this script, or just be prepared to muck around with some of the variables to
+get the output you're looking for.
+"""
+
 import datetime
 import sqlite3 as sql
 import argparse
@@ -47,21 +59,3 @@ bjoin = pd.merge(_aRight_f, _fRight_f, on='id', how='right')
 #print "\nva:",str(ajoin)
 print ajoin
 print bjoin
-#print "\nr:",str(_right_f)
-#print "\nr:",str(_aRight_f)
-#print "\nr:",str(_bRight_f)
-#print "\nr:",str(_cRight_f)
-#print "\nr:",str(_dRight_f)
-#print "\nr:",str(_eRight_f)
-#print "\nr:",str(_fRight_f)
-#print "\nr:",str(_gRight_f)
-#print "\nr:",str(_hRight_f)
-#print "\nr:",str(_iRight_f)
-#c = con.cursor()
-#data = c.execute(varSelect)
-#rows = c.fetchall()
-#for row in rows:
-#    try:
-#        rowList = {}
-        
-#    print("row: %s" % (row)) 
