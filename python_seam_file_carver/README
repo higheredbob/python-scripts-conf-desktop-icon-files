@@ -1,0 +1,9 @@
+Python seam carving. This version can remove objects, and resize horizontally or vertically via seam carving.
+
+It also allows the selction of three different algorhytms to parse images by.
+
+The carver, does not allow for additional masks beyond the first one called to be applied incase
+you get pinching or line runs. Best bet is to increase range step, or overall rendition decrease.
+
+It would be easy to apply other masks, just add below the mask call any additional masks needed, 
+there are plently in the same library used for the carver.
