@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#-------------------------------------------------------------
+# Source global definitions (if any)
+#-------------------------------------------------------------
+
+if [ -f /etc/profile ]; then
+        . /etc/profile
+fi
+
+source /${HOME}/.bashrc
+
+if [ $SHELLZ_THEME > 0 ]; then
+            source $SHELLZ/shellz.sh
+            sh -c /bin/bash
+        else
+            sh -c "ls '/${HOME}/.path/to/shellz/themes/'" | egrep -v "(base|colors)\.theme\.bash"
+            echo  "you may select any prompt theme here with exho <theme>"
+fi
+
+if [ -f /${HOME}/.path/to/urxthemes/loaded/active ]; then
+	xrdb -merge /${HOME}/.path/to/urxthemes/loaded/active
+fi
