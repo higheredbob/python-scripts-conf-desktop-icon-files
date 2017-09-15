@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+"""Use pandas to load, then write data to csv. Any sqlite db's should be parseable. 
+"""
+
 import sys
 import argparse
 import sqlite3
@@ -107,16 +110,6 @@ def step(topdir):
                         cols = [column[0] for column in query.description]
                         results= pd.DataFrame.from_records(data = query.fetchall(), columns = cols)
                         print results
-            #cur = db.cursor()
-
-            #cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
-            #rows = cur.fetchall()
-            #for row in rows:
-            #    rowName = rowName[0]
-            #    row = pd.read_sql_query('SELECT * from %s' % rowName, db)
-            #    cols = [column[0] for column in query.description]
-            #    results = pd.DataFrame.from_records(data = rows(), columns = cols)
-
 
 
 def main():
