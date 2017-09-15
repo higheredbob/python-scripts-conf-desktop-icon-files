@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+if [ -e /etc/profile.env ] ; then
+	. /etc/profile.env
+fi
+
+export EDITOR=${EDITOR:-/bin/nano}
+export PAGER=${PAGER:-/usr/bin/less}
+
+if [ "$EUID" = "0" ] || [ "$USER" = "root" ] ; then
+	PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/billz/bin:${ROOTPATH}"
+	PYTHONPATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/billz/bin:${PYTHONPATH}"
+else
+	PATH="/usr/local/bin:/usr/bin:/bin:${PATH}"
+fi
+export PATH
+export PYTHONPATH
+unset ROOTPATH
+
+if [ -n "${BASH_VERSION}" ] ; then
+	if [ -f /etc/bash/bashrc ] ; then
+    . /etc/bash/bashrc
+	else
+		PS1='\u@\h \w \$ '
+	fi
+else
+  PS1="${USER:-$(whoami 2>/dev/null)}@$(uname -n 2>/dev/null) \$ "
+fi
+
+for sh in /etc/profile.d/*.sh ; do
+	[ -r "$sh" ] && . "$sh"
+done
+unset sh
