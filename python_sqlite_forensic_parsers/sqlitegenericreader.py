@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+"""schema and full dump of any sqlite db
+"""
 import sqlite3 as sql
 import sys
 import argparse
