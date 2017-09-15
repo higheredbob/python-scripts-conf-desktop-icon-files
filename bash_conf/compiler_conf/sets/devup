@@ -1,0 +1,10 @@
+dev-db/postgresql
+dev-java/asm
+dev-java/junit
+dev-java/jython
+dev-libs/glib
+dev-libs/icu
+dev-libs/libuna
+dev-util/boost-build
+dev-util/colm
+dev-util/gdbus-codegen

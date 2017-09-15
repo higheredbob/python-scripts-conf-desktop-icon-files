@@ -1,0 +1,6 @@
+sys-apps/portage
+sys-apps/restartd
+sys-devel/gcc
+sys-libs/libcxxabi
+sys-libs/ncurses
+sys-power/cpupower

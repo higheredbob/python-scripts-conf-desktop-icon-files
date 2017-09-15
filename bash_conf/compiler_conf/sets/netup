@@ -1,0 +1,9 @@
+net-analyzer/bettercap
+net-analyzer/dsniff
+net-analyzer/metasploit
+net-analyzer/nmap
+net-analyzer/tcpreplay
+net-dns/bind-tools
+net-libs/nodejs
+net-wireless/bluez
+www-plugins/adobe-flash

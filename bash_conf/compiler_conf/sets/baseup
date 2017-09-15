@@ -1,0 +1,5 @@
+dev-lang/ruby
+dev-lang/spidermonkey
+sys-apps/portage
+sys-devel/gcc
+sys-kernel/ck-sources
