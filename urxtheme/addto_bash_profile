@@ -1,0 +1,10 @@
+# add lines to bash_profile
+# replace path info with path to your urxt themes dir
+# don't forget to source, if your init doesn't!
+
+# check if an active theme is loaded, if so, merge the 
+# theme/config with the environment
+
+if [ -f ${HOME}/path/to/urxthemes/loaded/active ]; then
+	xrdb -merge ${HOME}/path/to/urxthemes/loaded/active
+fi
