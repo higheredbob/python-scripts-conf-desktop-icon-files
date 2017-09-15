@@ -1,5 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
+"""for the chrome topsites db, dump contents.
+"""
 import datetime
 import sqlite3 as sql
 import argparse
@@ -30,11 +32,5 @@ c = con.cursor()
 c.execute(selectStatement)
 rows = c.fetchall()
 for row in rows:
-    #last_updated = "lastUpdated",str(fixDate(row[2]))
     url, title, last_updated, Datet, load_completed, redirects = row
-    #print "url:",row[0].encode('utf-8')
-    #print "\ttitle:",str(row[1])
-    #print "\tlastUpdated:",str(fixDate(row[2]))
-    #print "\tcompleted:",str(row[3])
-    #print "\tredirects:",str(row[4])
     print("\nurl: {},\n\ttitle: {},\n\tlastUpdated: {},\n\tDate: {},\n\tloadComplete: {},\n\tRedirects: {}|".format(url, title, fixDate(last_updated), Datet, load_completed, redirects))
