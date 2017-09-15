@@ -1,0 +1,13 @@
+=sys-fs/zfs-kmod-9999 **
+=sys-fs/zfs-9999 **
+=sys-kernel/spl-9999 **
+=sys-apps/go-mtpfs-9999 **
+=dev-libs/go-usb-9999 **
+=sys-devel/gcc-7.1.0-r1 **
+=sys-devel/binutils-2.29 **
+=sys-kernel/linux-headers-4.11 **
+=sys-libs/glibc-2.25-r3 **
+=sys-devel/libtool-2.4.6-r4 **
+=sys-devel/llvm-5.0.0 **
+=sys-devel/clang-runtime-5.0.0 **
+=sys-libs/libomp-9999 **
