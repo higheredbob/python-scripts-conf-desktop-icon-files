@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# schema pull, and sqlite db
+
 import sqlite3 as sql
 import argparse
 import csv
