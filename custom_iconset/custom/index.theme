@@ -1,0 +1,46 @@
+[Icon Theme]
+Name=custom
+Comment=custom is an icon addition for Linux desktops, with style.
+
+Inherits=
+
+Example=directory-x-normal
+
+# Directory list
+Directories=scalable/apps,scalable/categories,scalable/devices,scalable/mimetypes,scalable/places
+
+
+[scalable/apps]
+Size=36
+Context=Applications
+Type=Scalable
+MinSize=16
+MaxSize=124
+
+[scalable/categories]
+Size=24
+Context=Categories
+Type=Scalable
+MinSize=16
+MaxSize=124
+
+[scalable/devices]
+Size=24
+Context=Devices
+Type=Scalable
+MinSize=16
+MaxSize=124
+
+[scalable/mimetypes]
+Size=24
+Context=Mimetypes
+Type=Scalable
+MinSize=16
+MaxSize=124
+
+[scalable/places]
+Size=24
+Context=Applications
+Type=Scalable
+MinSize=16
+MaxSize=124
