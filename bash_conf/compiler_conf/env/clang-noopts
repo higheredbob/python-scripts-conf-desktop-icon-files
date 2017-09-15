@@ -1,0 +1,16 @@
+NOLTO="-fno-lto"
+
+CFLAGS="-O2 -march=bdver2 -pipe ${NOLTO}"
+CXXFLAGS="${CFLAGS}"
+FFLAGS="${CFLAGS}"
+FCFLAGS="${FFLAGS}"
+####################################
+###############
+
+CC="/usr/bin/clang"
+CXX="/usr/bin/clang++"
+CPP="/usr/bin/clang-cpp"
+F77="/usr/bin/gfortran"
+AR="/usr/bin/clang-ar"
+NM="/usr/bin/llvm-nm"
+RANLIB="/usr/bin/llvm-ranlib"

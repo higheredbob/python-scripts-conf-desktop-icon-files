@@ -1,0 +1,23 @@
+GRAPHITE="-fgraphite -fgraphite-identity -floop-nest-optimize"
+FLTO="-flto=4 -ftree-vectorize -fno-fat-lto-objects"
+#############################
+################
+
+CFLAGS="-O2 -pipe -march=bdver2 ${FLTO} ${GRAPHITE}"
+LD="ld.gold"
+CXXFLAGS="${CFLAGS} -fno-delete-null-pointer-checks"
+FFLAGS="${CFLAGS}"
+FCFLAGS="${FFLAGS}"
+LDFLAGS="-Wl,--as-needed -Wl,-O1 -Wl,--hash-style=gnu -Wl,${FLTO} -Wl,${GRAPHITE}"
+######################
+###########
+
+CC="gcc"
+CXX="g++"
+NM="gcc-nm"
+RANDLIB="gcc-ranlib"
+F77="gfortran"
+AR="gcc-ar"
+CPP="cpp"
+########################
+#############

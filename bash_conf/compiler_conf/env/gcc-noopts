@@ -1,0 +1,19 @@
+###########################
+############## No Linker, No Graphite
+####
+
+CFLAGS="-O2 -pipe -march=bdver2 -fno-strict-aliasing"
+CXXFLAGS="${CFLAGS} -fno-delete-null-pointer-checks"
+LDFLAGS="-Wl,--as-needed -Wl,-O1 -Wl,--hash-style=gnu"
+FFLAGS="${CFLAGS}"
+FCFLAGS="${FFLAGS}"
+##################################${FLTO}
+#*#*#*#*#*#*#*#*# The work horse
+#%#%#%#%#%
+CC="gcc"
+CXX="g++"
+NM="gcc-nm"
+RANDLIB="gcc-ranlib"
+F77="gfortran"
+AR="gcc-ar"
+CPP="cpp"

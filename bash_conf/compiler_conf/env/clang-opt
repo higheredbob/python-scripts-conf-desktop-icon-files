@@ -1,0 +1,38 @@
+FLTO="-flto=thin --plugin /usr/bin/LLVMgold.so"
+
+##############################
+###############
+
+
+CFLAGS="-O2 -march=bdver2 -pipe ${FLTO}"
+CXXFLAGS="${CFLAGS}"
+FFLAGS="${CFLAGS}"
+FCFLAGS="${FFLAGS}"
+LDFLAGS="-Wl,-O2 -Wl,--as-needed -Wl,--hash-style=gnu" # -Wl,${FLTO}"
+####################################
+###############
+
+LD='/usr/bin/LLVMgold.so'
+CC="/usr/bin/clang"
+CXX="/usr/bin/clang++"
+CPP="/usr/bin/clang-cpp"
+F77="/usr/bin/gfortran"
+AR="/usr/bin/clang-ar"
+NM="/usr/bin/llvm-nm"
+RANLIB="/usr/bin/llvm-ranlib"
+###########################3
+#############
+
+
+# -std=gnu89 for C89/C90 with GNU extensions,
+# -std=gnu99 for C99 with GNU extensions,
+# -std=gnu++98 for C++:1998 with GNU extensions.
+
+
+# A common symptom of this problem are multiple definitions of inline functions like this:
+
+# FILE /var/log/portage/Example package error in example log
+#/usr/bin/x86_64-pc-linux-gnu-ld: error: ../mpi/.libs/libmpi.a(mpi-bit.o): multiple # definition of '_gcry_mpih_add'
+# /usr/bin/x86_64-pc-linux-gnu-ld: ../mpi/.libs/libmpi.a(mpi-add.o): previous definition here
+# /usr/bin/x86_64-pc-linux-gnu-ld: error: ../mpi/.libs/libmpi.a(mpi-bit.o): multiple # definition of '_gcry_mpih_add_1'
+# /usr/bin/x86_64-pc-linux-gnu-ld: ../mpi/.libs/libmpi.a(mpi-add.o): previous definition here
