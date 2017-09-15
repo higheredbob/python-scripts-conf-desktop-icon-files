@@ -1,0 +1,11 @@
+The files addto_bash_profile and urxtheme.plugin.bash require modification to work, 
+the first needs to be added to your bash profile, or shell user-config.
+While the second, needs to be added to either your plugin scripting system,
+or sourced during sys init (openrc, systemd, etc). I guess you could just make it 
+an exec in /usr/bin and run the command, but the whole point behind why I created it,
+was to largely automate both the configuration of urxt and theming.
+
+Also, DO NOT FORGET to change the pathing to the actual path you install the themes for urxt in.
+If you so desire, you can also edit the urxtconfig file, to whatever settings you would like.
+The settings used, are just my preferences. You will also notice, I prefer dark themes, and not one
+light theme is utilized.
