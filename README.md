@@ -7,6 +7,4 @@ You can also see many of the icons on display, from within pcmanfm, dockbarx (to
 xfce-panel (bot & right), as well as the menu.
 
 ![Desktop](custom_iconset/images/desk_music.jpg?raw=true)
-![terminal](custom_iconset/images/urxvt.jpg?raw=true) ![filemanager](custom_iconset/images/pcmanfm.jpg?raw=true)
-![terminal](custom_iconset/images/urxvt.jpg?raw=true){:height="38%" width="53%"}
-![filemanager](custom_iconset/images/pcmanfm.jpg?raw=true){:height="42%" width="50%"}
+<img src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/urxvt.jpg" data-canonical-src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/urxvt.jpg" width="400" height="300" /> <img src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/pcmanfm.jpg" data-canonical-src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/pcmanfm.jpg" width="470" height="420" />
