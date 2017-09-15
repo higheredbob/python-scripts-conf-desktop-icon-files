@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+opensql ()
+{
+    for i in $(sqlite3 $1 .tables); do
+        echo Table: $i;
+             sqlite3 $1 -header "select * from $i";
+        echo
+    done
+}
+
+deurl() 
+{
+echo "path to file of Urls"
+read answer
+local FILE="$answer"
+
+for url in $(cat ${FILE}) ; do
+#        if [[ $url -eq 0 ]]; then
+                anchor=${url##*\#}
+                parameters=${url##*\?}
+                parameters=${parameters//#$anchor/}
+                echo ${parameters//&/ }
+                echo $anchor
+#        else
+#                echo "not a url this round:" ${url}
+#        fi
+done
+}
+
+dbcookie() 
+{
+echo "path to db with URL's (cookie db)"
+printf "db to read? >"
+read answer
+local db=${answer}
+if [ -f ${db} ]; then
+        sqlite3 --list ${db} select * from urls where url like "%?%" or url like "%#%";
+else
+        echo "unable to parse ${db}, db corrupt or broke"
+fi
+}
+
+ugrep() 
+{
+echo "path to img/file to search for urls?"
+read answer
+local IMG=$answer
+echo "file to output url's?"
+read ans
+local OUTF=$ans
+if [ -f ${IMG} ]; then
+    egrep -i -o "https?://(www.)?[a-z0-9+_., /%&$=-]+" $IMG | (cat) > $OUTF
+else
+    echo "invalid img/file"
+fi
+}
+
+foman()
+{
+ for i in $1;
+    do $2;
+ done
+
+}
