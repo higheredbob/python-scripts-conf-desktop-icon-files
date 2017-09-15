@@ -1,0 +1,9 @@
+simple program to take either a memdump, or strings dump, and decode any base64 strings to 
+readable format. Take care to have a terminal that can push out random strings and 
+not execute potential bits of code that may raise error and display.
+
+If the main terminal you utilize has a documented history of execuring when symbols flash through
+the terminal, because it comes out in binary, or machine language, 
+which can happen with HTML b64 strings, I would not run this program.
+Unless I setup additional encoding handlers, or a way to route output to a different 
+destination (terminator can redirect to file, for instance).
