@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+"""There is no output file needed, it defaults to stdout. The parser was copied many times
+over, in a slew of scripts I wrote for db files, and I was lazy. You can delete, or create a simple
+outfile call, and write the print function to a file instead. This script is intended for chrome cookie db.
+"""
+
 import sqlite3 as sql
 import argparse
 import sys
