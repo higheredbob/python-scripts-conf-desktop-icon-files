@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""outfile is utilized here, dumps an sqlite db, into an csv. This file can work on
+some corrupt databases
+"""
+
 import argparse
 import sqlite3 as sql
 import csv
