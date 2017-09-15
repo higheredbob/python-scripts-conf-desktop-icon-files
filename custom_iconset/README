@@ -1,0 +1,26 @@
+First, I'd like to thank all the great creators of these icons, who are far too numerous
+to list. Practically every icon in my personal collection comes from a different creator.
+I have accumulated, what I feel like, are the best icons. I have painstakingly converted
+them to svg for scaling, as 98% of them, did not come in a svg format. I have also, customized
+a portion of the icons, such as folders, or buttons (used for creating splash logins).
+
+I have tried my best, to not have copyrighted or non-opensource icons, but there are sooo many,
+if you see an icon that should not be included. Please let me know, and I will remove it.
+
+Again, thank you to all the creators of these icons, you have made my desktop far more 
+appealing to me, and I appreciate your effort!
+
+This is an entirely scripted or hand created assignment. I use scripts to code as much assignment
+as possible, so not all icons line up with traditional desktop assignments. You will have to assign them
+yourself, if you plan on using my library of icons. In truth, I don't run one of the standard desktop environments
+anyways, so it makes little sense for me to assign them values, that wouldn't get used by my desktop anyhow. **I run
+a custom created environment, of openbox, dockbarx, lxappearance, xfce4-panel, nitrogen, lxdm, sddm, pcmanfm, thunar, doublecommand,
+xfce4-notifyd, xml-menus, compton, and I'm sure I've forgotten a few other odds and in's I use**
+
+It is easiest, to use this icon set, as one that fills in another set. My personal preference, I use Mine-Mavericks,
+and I replace all the calls to other icon sets, with this one, such as inherits (from mavericks) Mine, which Mine inherits oxygen,hicolor,gnome.
+I edit those theme files, to inherits custom. Then, whichever icons are broken, or I don't like from mavericks, I just go about 
+assigning my files. Either through linking into mavericks, renaming in custom, or app assignment in /usr/share/applications/*.desktop
+
+I make sure I have no icons in ${HOME} or pixmap, pixmap is hardest to avoid, and it's easier to just 
+link a base set of icons to the pixmap dir, and use pixmaps as hicolor for default in gtkrc files.
