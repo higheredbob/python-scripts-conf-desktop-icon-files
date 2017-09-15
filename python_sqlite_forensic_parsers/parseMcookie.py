@@ -1,4 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+
+""" Jon Glass wrote this one, but he hard-coded in the variables
+which I repalced with argparse, to make the program a lot more 
+flexible. And allow it to run on linux, which his original version
+did not. I believe I had something in mind for -v, but it doesn't look
+like I got around to implementing it.
+
+This script is for the Mozilla Cookie DB
+"""
 
 import datetime
 import sqlite3 as sql
