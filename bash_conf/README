@@ -1,0 +1,12 @@
+Bash files, these are my active bash files. 
+They will not work directly for the most 
+part in your system, they are not standalone;
+since they are attached to a plugin system,
+or various other scripts not in this directory.
+
+All scripts however, will be located in this repository, so if you
+want the complete build I utilize, it will be here, but will require
+some effort on your part to ensure they run on your system. 
+
+My dev. environment, is a hybrid gentoo/funtoo build, so some things 
+may not port directly over to your distrabution.
