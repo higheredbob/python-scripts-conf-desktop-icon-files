@@ -1,0 +1,12 @@
+gentoo:funtoo/1.0/linux-gnu/arch/x86-64bit
+gentoo:funtoo/1.0/linux-gnu/build/current
+gentoo:funtoo/1.0/linux-gnu/arch/x86-64bit/subarch/amd64-piledriver
+gentoo:funtoo/1.0/linux-gnu/flavor/desktop
+gentoo:funtoo/1.0/linux-gnu/mix-ins/X
+gentoo:funtoo/1.0/linux-gnu/mix-ins/xfce
+gentoo:funtoo/1.0/linux-gnu/mix-ins/audio
+gentoo:funtoo/1.0/linux-gnu/mix-ins/mediadevice-video-consumer
+gentoo:funtoo/1.0/linux-gnu/mix-ins/mediaformat-gfx-extra
+gentoo:funtoo/1.0/linux-gnu/mix-ins/console-extras
+gentoo:funtoo/1.0/linux-gnu/mix-ins/dvd
+gentoo:funtoo/1.0/linux-gnu/mix-ins/mate
