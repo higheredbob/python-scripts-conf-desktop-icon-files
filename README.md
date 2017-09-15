@@ -8,3 +8,5 @@ xfce-panel (bot & right), as well as the menu.
 
 ![Desktop](custom_iconset/images/desk_music.jpg?raw=true)
 ![terminal](custom_iconset/images/urxvt.jpg?raw=true) ![filemanager](custom_iconset/images/pcmanfm.jpg?raw=true)
+![terminal](custom_iconset/images/urxvt.jpg?raw=true){:height="38%" width="53%"}
+![filemanager](custom_iconset/images/pcmanfm.jpg?raw=true){:height="42%" width="50%"}
