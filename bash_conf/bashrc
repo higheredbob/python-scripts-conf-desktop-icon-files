@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+export SHELLZ="/${HOME}/.path/to/shellz"
+
+export GIT_HOSTING='git@git.domain.com'
+
+unset MAILCHECK
+
+export IRC_CLIENT='irssi'
+
+export TODO="t"
+
+export SCM_CHECK=true
+
+# Unomment this (or set SHORT_HOSTNAME to something else)
+# export SHORT_HOSTNAME=$(hostname -s)
+
+# android SDK settings
+# if [ -d /opt/android-sdk-update-manager ]; then
+#    export PATH=$PATH:/opt/android-sdk-update-manager/tools:/opt/android-sdk-update-manager/platforn-tools
+#    export ANDROID_SWT=/opt/android-sdk-update-manager/tools/lib/x86_64/
+#    export CCOMPILER=/opt/android-sdk-update-manager/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
+# fi
+
+exho()
+{
+if [[ $1 > 0  ]]; then
+		export SHELLZ_THEME="$1"
+		source $SHELLZ/shellz.sh
+        sh -c /bin/bash
+		echo "Theme set to $1"
+	else
+		echo "no name was given sucka"
+fi
+}
+
+#echo ${USERCOMPI}
+
+#if [ ${USERCOMPI} = eko ]; then
+#	source /${HOME}/.ekoenv
+#elif [ ${USERCOMPI} = gnu ]; then
+#	source /${HOME}/.gnuenv
+#else
+#	unset ${USERCOMPI}
+#fi
+
+source $SHELLZ/shellz.sh
+export SCIPY_PIL_IMAGE_VIEWER=nomacs
+
+# added by Miniconda2 4.3.11 installer
+# export PATH="/usr/lib/miniconda2/bin:$PATH"
+# export PATH=$PATH:/root/.copernicus
+
+export PATH=$(echo $PATH | awk -F: '{ for (i = 1; i <= NF; i++) arr[$i]; } END { for (i in arr) printf "%s:" , i; printf "\n"; }')
+export PYTHONPATH=$(echo $PYTHONPATH | awk -F: '{ for (i = 1; i <= NF; i++) arr[$i]; } END { for (i in arr) printf "%s:" , i; printf "\n"; }')
