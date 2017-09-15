@@ -1,0 +1,56 @@
+>=dev-python/numpy-1.11.2-r1 lapack
+>=dev-qt/qtcore-4.8.7-r2:4 qt3support
+>=dev-qt/qtdeclarative-4.8.7:4 webkit qt3support
+>=dev-qt/qtgui-4.8.7:4 qt3support
+>=dev-qt/qtgui-5.7.1 libinput
+>=dev-qt/qtopengl-4.8.7:4 qt3support
+>=dev-qt/qtsql-4.8.7-r1:4 qt3support
+>=dev-ruby/activerecord-4.2.7.1:4.2 postgres
+>=mate-base/mate-menus-1.18.0 introspection
+>=media-libs/gstreamer-1.8.3 introspection
+>=media-libs/jbigkit-2.1 abi_x86_32
+>=media-libs/phonon-vlc-0.9.0 qt5
+>=media-plugins/alsa-plugins-1.1.1 pulseaudio
+>=media-video/ffmpeg-3.2.2 opus alsa
+>=sci-libs/netcdf-4.4.1.1 hdf
+>=sci-libs/scipy-0.19.1 sparse
+>=sys-apps/file-5.29 -python
+>=sys-apps/portage-9999 python_targets_python2_7 python_targets_python3_4 ipc
+>=sys-auth/polkit-qt-0.112.0-r1 qt5
+>=sys-devel/autogen-5.18.12 libopts
+>=sys-kernel/spl-9999
+>=x11-base/xorg-server-1.17.4 xvfb
+>=x11-libs/gdk-pixbuf-2.36.2 introspection
+>=x11-libs/gtk+-3.20.9 introspection
+>=x11-libs/gtksourceview-3.20.4 introspection
+>=x11-libs/libxcb-1.12-r2 xkb
+>=x11-libs/pango-1.40.3 introspection
+app-portage/layman sync-plugin-portage
+app-text/poppler cairo
+dev-lang/python-exec python_targets_python2_7 python_targets_python3_4
+media-gfx/graphicsmagick q16 lzma
+media-gfx/imagemagick fftw
+media-gfx/nomacs opencv
+media-libs/gst-plugins-base alsa introspection
+media-libs/harfbuzz cairo glib graphite icu truetype
+media-libs/lensfun python_single_target_python3_4
+media-libs/libcanberra alsa
+sci-libs/fftw float fortran openmp
+sys-apps/duc gui -cairo -leveldb -ncurses -X -sqlite
+sys-block/gparted btrfs f2fs fat mdadm ntfs
+sys-devel/gcc ada fortran graphite sanitize openmp gold cxx objc objc++
+sys-fs/zfs
+sys-kernel/linux-headers
+sys-libs/glibc profile gd
+x11-terms/rxvt-unicode -vanilla 256-color blink fading-colors pixbuf secondary-wheel unicode3
+x11-wm/fvwm rplay tk xinerama
+>=media-libs/phonon-4.9.1 qt5
+sys-devel/clang default-libcxx python
+sys-devel/llvm clang libedit default-libcxx libffi ncurses xml python -sanatize
+sys-libs/libcxx libcxxabi
+sys-libs/libcxxabi
+sys-devel/clang-runtime libcxx -sanatize
+sys-libs/llvm-libunwind
+>=dev-libs/libedit-20170329.3.1 abi_x86_32
+>=sys-devel/clang-runtime-5.0.0 sanatize compiler-rt libcxx openmp
+x11-wm/openbox imlib
