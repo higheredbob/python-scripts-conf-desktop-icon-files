@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+"""This is a generic sqlite parser, and will dump any valid sqlite file to stdout. This one
+is mostly my writing, a portion of the fixdate def, is Jon Glass'
+It looks like it dumps the schema as well.
+"""
+
 import datetime
 import sqlite3 as sql
 import argparse
@@ -38,14 +43,3 @@ for row in rows:
     metahandle, base_version, Mdate, Mserver, Ctime, Cserver, specifics = row
     #print(row[6].encode('utf-8'))
     print ('{}|{}|{}|{}|{}|{}|{}.encode("utf-8")'.format(metahandle, base_version, Mdate, Mserver, Ctime, Cserver, specifics.decode('utf-8')))
-#con = sql.connect(db)
-#c = con.cursor()
-#for row in c.execute(selectStatement):
-#    print "id:",int(row[0])
-#    print "\tbase:",str(row[1])
-#    print "\tcreation:",str(fixDate(row[2]))
-#    print "\tservercreate:",str(fixDate(row[3]))
-#    print "\tCcreate:",str(fixDate(row[4]))
-#    print "\tCservercreate:",str(fixDate(row[5]))
-#    print "\tCcreate:",str(row[6])
-    #row[6].encode('utf-8')
