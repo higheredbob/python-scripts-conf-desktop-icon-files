@@ -1,0 +1,171 @@
+#!/usr/bin/env bash
+
+######################
+# sourced functions, or plugins,
+# related to maint, compiler etc
+#################################################
+
+gcc_noopts()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} gcc-noopts" >> ${STAGING}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+        cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+    fi
+}
+
+gcc_nolto()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} gcc-nolto" >> ${STAGING}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+        cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+    fi
+}
+
+gcc_nographite()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} gcc-nographite" >> ${STAGING}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+        cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+    fi
+}
+
+gcc_ltogp()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} gcc-lto-gp" >> ${STAGING}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+        cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+    fi
+}
+
+clang_noopts()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} clang-noopts" >> ${STAGING}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+        cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+    fi
+}
+
+clang_opts()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} clang-opts" >> ${STAGING}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+        cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+    fi
+}
+
+gcc_noopts()
+{
+    local STAGING="/etc/portage/package.env.staging.bak"
+    local FINAL="/etc/portage/package.env"
+    local BAKUP="/etc/portage/package.env.gcc.bak"
+    if [ -f ${FINAL} ]; then
+        for i in $@; do
+            echo "${i} gcc-noopts" >> ${STAGING}
+            cat ${STAGING} | egrep -i "*/*" | sort > ${FINAL}
+            echo "${i} gcc-noopts" >> ${BAKUP}
+        done
+    fi
+}
+
+pathclean()
+{
+OPATH="$PATH"
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/billz/bin:/usr/local/bin:/usr/local/sbin"
+PATH="/bin:${PATH}:/usr/bin:${PATH}"
+
+  if [ -z "$BASH" ]
+    then typeset -A FOO # ksh93
+    else declare -A FOO # bash
+  fi
+  OIFS=$IFS
+  IFS=':'
+  for A in ${PATH}
+  do
+    [ -z "${FOO[${A}]}" ] || continue
+    FOO[${A}]=${#FOO[*]}
+
+  # Reconstruct the $PATH
+  if [ -z "$RET_VAL" ]
+    then RET_VAL="$A"
+    else RET_VAL="${RET_VAL}:${A}"
+  fi
+  done
+
+  IFS=$OIFS
+  echo $RET_VAL
+  export PATH=$RET_VAL
+}
+
+path2clean()
+{
+NPATH="$PYTHONPATH"
+PYTHONPATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/billz/bin:/usr/local/bin:/usr/local/sbin:/usr/billz/lib:/usr/billz/libexec"
+PYTHONPATH="/bin:${PYTHONPATH}:/usr/bin:${PYTHONPATH}"
+
+  if [ -z "$BASH" ]
+    then typeset -A BAZ # ksh93
+    else declare -A BAZ # bash
+  fi
+  OIFS=$IFS
+  IFS=':'
+  for B in ${PYTHONPATH}
+  do
+    [ -z "${BAZ[${B}]}" ] || continue
+    # By this point no dupe was found
+    BAZ[${B}]=${#BAZ[*]}
+
+  if [ -z "$RET_VALB" ]
+    then RET_VALB="$B"
+    else RET_VALB="${RET_VALB}:${B}"
+  fi
+
+  done
+
+  IFS=$OIFS
+  echo $RET_VALB
+  export PYTHONPATH=$RET_VALB
+}
+
+if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
+
+if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
+
+shopt -s checkwinsize
+
+if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
