@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+"""for the chrome history file.
+"""
+
 import datetime
 import sqlite3 as sql
 import argparse
@@ -24,12 +27,7 @@ def fixDate(timestamp):
 
 #selectStatement = "SELECT lower_term, term, url_id FROM keyword_search_terms"
 db = args.database #args.filename()
-#con = sql.connect(db)
-#c = con.cursor()
-#for row in c.execute(selectStatement):
-#    print "term:",str(row[0])
-#    print "\tterm2:",str(row[1])
-#    print "\turl_id:",str(row[2])
+
     
 aselectStatement = "SELECT id, url, title, visit_count, typed_count, last_visit_time FROM urls ORDER BY last_visit_time ASC"
 con = sql.connect(db)
@@ -42,11 +40,3 @@ for row in c.execute(aselectStatement):
     print "\ttyped:",str(row[4])
     print "\tlast_visit:",str(fixDate(row[5]))
     
-#bselectStatement = "SELECT id, url, visit_time, visit_duration FROM visits"
-#con = sql.connect(db)
-#c = con.cursor()
-#for row in c.execute(bselectStatement):
-#    print "id:",str(row[0])
-#    print "\turl:",str(row[1])
-#    print "\tvisit_time:",str(fixDate(row[2]))
-#    print "\tduration:",str(row[3])
