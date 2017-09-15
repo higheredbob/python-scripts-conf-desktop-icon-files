@@ -1,0 +1,6 @@
+portage configure files, keep in mind, I do run half the config of a funtoo system as well,
+so some normal files you might expect to see, won't be present in my configuration.
+As well as, additional files you wouldn't see in a strictly funtoo config, will be present 
+in my configuration. Like my make.conf is not blank, as it would be in a funtoo config. I also
+use layman, which is very difficult if using the standard profiles in a funtoo configuration, as
+the ebuilds often fail when parsing the funtoo profiles.
