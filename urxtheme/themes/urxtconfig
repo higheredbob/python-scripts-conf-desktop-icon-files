@@ -1,0 +1,134 @@
+Xft.autohint: 		0
+Xft.lcdfilter:  	lcddefault
+Xft.hintstyle:  	hintfull
+Xft.hinting: 		1
+Xft.antialias: 		1
+Xft.rgba: 			vrgb
+Xft.dpi: 			96
+
+xterm*borderLess: true
+xterm*fastScroll: true
+xterm*jumpscroll: true
+xterm*loginshell: true
+xterm*faceName: Source Code Pro:size=11
+xterm*saveLines: 160000
+xterm*trimSelection: true
+xterm*geometry: 85x19
+xterm*eightBitInput: false
+xterm*metaSendsEscape: true
+
+! unicode
+URxvt.imLocale: 			  en_US.UTF-8
+! Perl extensions
+! transparency, the brackets [0-100] impact %
+URxvt.depth: 				  32
+URxvt.secondaryWheel: 		  1
+URxvt.secondaryScreen:  	  1
+URxvt.secondaryScroll: 	  	  0
+! URxvt*background:[80]Black
+urxvt.scrollstyle:            smooth
+URxvt.scrollBar:              False
+! URxvt*thickness:          	  5
+URxvt*saveLines:              70654
+URxvt.cursorBlink:            True
+URxvt*cursorUnderline:        True
+urxvt*scrollWithBuffer: 	  True
+URxvt*scrollTtyOutput: 		  False
+URxvt*scrollTtyKeypress: 	  True
+URxvt.shading:                20
+URxvt.fading:                 60
+! URxvt.reverseVideo:     	  True
+URxvt.transparency:  	      True
+URxvt.clipboard.autocopy: 	  True
+URxvt.keysym.Shift-Left: 	  perl:tabbedex:prev_tab
+URxvt.keysym.Shift-Right: 	  perl:tabbedex:next_tab
+URxvt.keysym.Control-t: 	  perl:tabbedex:new_tab
+! URxvt.keysym.Control-v:     perl:clipboard:paste
+URxvt.keysym.M-C-v: 	      perl:clipboard:paste_escaped
+URxvt.keysym.C-Up:     		  font-size:increase
+URxvt.keysym.C-Down:   		  font-size:decrease
+URxvt.keysym.C-S-Up:   		  font-size:incglobal
+URxvt.keysym.C-S-Down: 		  font-size:decglobal
+URxvt.keysym.C-equal:  		  font-size:reset
+URxvt.keysym.C-slash:  		  font-size:show
+URxvt.tabbed.autohide: 		  True
+URxvt.tabbed.no-tabbedex-keys: True
+URxvt.urgentOnBell: 		  False
+URxvt.loginShell:     		  True
+URxvt.internalBorder:   	  0
+URxvt.externalBorder:  		  1
+URxvt.borderLess:         False
+URxvt.iso14755: 			  True
+URxvt.iso14755_52: 			  False
+URxvt.letterSpace: 			  -1
+URxvt.cutchars:               ()*,<>[]{}|`""''
+! URxvt.selection.pattern-0: 	  ([[:word:]]+)
+URxvt.selection.pattern-0: ([^"&'()*,;<=>?@[\\\\]^`{|})]+)"
+URxvt.perl-ext-common: 		   ...,tabbed,matcher,default
+!URxvt*matcher.pattern.1:     \\b(mailto:)[\\w\-\@;\/?:&=%\$_.+!*\x27(),~#]+ [\\w\-\@;\/?:&=%\$_+!*\x27()~]
+!URxvt.matcher.launcher.1:    claws-mail
+URxvt*matcher.pattern.1:      \\bhttps?:\/\/(www.youtube|youtube).com\/watch\\?v=([\\w-]*)|vimeo.com\/([\\w-]*)
+URxvt*matcher.launcher.1:     mtube $0
+URxvt*matcher.pattern.2:      \\bhttps?:\/\/[\\w-.]*\/[\\w./?&@#-]*.(jpg|jpeg|png)
+URxvt*matcher.launcher.2:     nomacs $0
+URxvt.matcher.button:         1
+URxvt.urlLauncher:            chromium
+URxvt.tabbed.tabbar-fg: 	  2
+URxvt.tabbed.tabbar-bg: 	  0
+URxvt.tabbed.tab-fg: 		  3
+URxvt.tabbed.tab-bg: 		  0
+! All keybindings
+!URxvt.keysym.Home:          \033[1~
+!URxvt.keysym.End:           \033[4~
+!URxvt.keysym.C-slash:       \033<C-/>
+!URxvt.keysym.C-semicolon:   \033<C-;>
+!URxvt.keysym.C-grave:       \033<C-`>
+!URxvt.keysym.C-comma:       \033<C-,>
+!URxvt.keysym.C-period:      \033<C-.>
+!URxvt.keysym.C-0x60:        \033<C-`>
+!URxvt.keysym.C-Tab:         \033<C-Tab>
+!URxvt.keysym.C-Return:      \033<C-Return>
+!URxvt.keysym.S-Return:      \033<S-Return>
+!URxvt.keysym.S-space:       \033<S-Space>
+!URxvt.keysym.M-Up:          \033<M-Up>
+!URxvt.keysym.M-Down:        \033<M-Down>
+!URxvt.keysym.M-Left:        \033<M-Left>
+!URxvt.keysym.M-Right:       \033<M-Right>
+!URxvt.keysym.M-C-0:         list \033<M-C- 0123456789 >
+!URxvt.keysym.M-C-a:         list \033<M-C- abcdefghijklmnopqrstuvwxyz >
+!URxvt.keysym.F12:           command:\033]701;zh_CN.GBK\007
+
+!URxvt.throughColor:
+!URxvt.highlightColor:
+URxvt.allow_underline: True
+URxvt.underlineColor:  True
+URxvt.allow_italic:    True
+URxvt.allow_bold:      True
+! URxvt.font: xft:Menlo Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt.font: xft:Menlo Regular:pixelsize=13:antialias=True:hinting=True
+! URxvt*italicFont: xft:Menlo Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt*boldFont: xft:Menlo Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt.font: xft:Montecarlo Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt.font: xft:Montecarlo Regular:pixelsize=13:antialias=True:hinting=True
+! URxvt*italicFont: xft:Montecarlo Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt*boldFont: xft:Montecarlo Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt.font: xft:Source Code Pro Regular:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt.font: xft:Source Code Pro Regular:pixelsize=13:antialias=true:hinting=true
+! URxvt*italicFont: xft:Source Code Pro Regular:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt*boldFont: xft:Source Code Pro Regular:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt.font: xft:Inconsolata Medium:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt.font: xft:Inconsolata Medium:pixelsize=13:antialias=True:hinting=True
+! URxvt*italicFont: xft:Inconsolata Medium:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt*boldFont: xft:Inconsolata Medium:bold:pixelsize=13:antialias=True:hinting=True
+! URxvt.font: xft:Hack Regular:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt.font: xft:Hack Regular:pixelsize=13:antialias=true:hinting=true
+! URxvt*italicFont: xft:Hack Regular:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt*boldFont: xft:Hack Regular:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt.font: xft:Dina Bold:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt.font: xft:Dina Bold:pixelsize=13:antialias=true:hinting=true
+! URxvt*italicFont: xft:Dina Bold:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt*boldFont: xft:Dina Bold:bold:pixelsize=13:antialias=true:hinting=true
+URxvt.font: xft:Anonymous Pro Regular:bold:pixelsize=13:antialias=true:hinting=true
+! URxvt.font: xft:Anonymous Pro Regular:pixelsize=13:antialias=true:hinting=true
+URxvt*italicFont: xft:Anonymous Pro Regular:bold:pixelsize=13:antialias=true:hinting=true
+URxvt*boldFont: xft:Anonymous Pro Regular:bold:pixelsize=13:antialias=true:hinting=true
