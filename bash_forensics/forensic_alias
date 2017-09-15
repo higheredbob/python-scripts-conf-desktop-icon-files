@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#Email address match, robust
+alias grepem="egrep -i '\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b'"
+
+#slightly looser IP search
+alias grepip='grep -rP “[^\d\.]\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}[^\d\.]”'
+
+#searches
+alias grepsrch="egrep -io '[?&](k|p|q|query)=[a-zA-Z0-9+_%-]+'"
+
+#SSN
+alias grepssn="egrep -i \d{3}[-.\s]\d{3}[-.\s]\d{4}"
+
+#user name search
+alias grepuser="egrep -i userdata2:/.*ajaxid=[1-9]{1}435220730000.*/"
+
+# grep with file of regex
+alias grepf="egrep -i -f /home/regx.txt"
+
+# sed, then sort, uniq, then final sort 
+alias sedsrt=" sed 's/.*=//' | sort | uniq -c | sort -nr"
+
+# sort, then uniq, then final sort
+alias unqsrt=" sort | uniq -c | sort -nr"
+
+# find sqlite recursively in a directory
+alias fndsql='find . -type f | while read i; do file $i | grep -q SQLite; [ $? = 0 ] && (echo $i; sqlite3 -csv $i .tables; echo); done'
+alias fnd='find . -name '
