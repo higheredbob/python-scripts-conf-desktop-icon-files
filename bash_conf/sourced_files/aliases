@@ -1,0 +1,37 @@
+alias eixall="NAMEVERSION='<category>/<name>' eix -I --format '<installedversions:NAMEVERSION>\n'"
+
+alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
+
+alias mktar='tar -cvf'
+alias mkbz2='tar -cvjf'
+alias mkgz='tar -cvzf'
+alias untar='tar -xvf'
+alias unbz2='tar -xvjf'
+alias ungz='tar -xvzf'
+alias google-chrome-stable='google-chrome-stable --no-sandbox'
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -iv'
+alias mkdir='mkdir -p'
+alias ps='ps auxf'
+alias ping='ping -c 10'
+alias less='less -R'
+alias cls='clear'
+alias multitail='multitail --no-repeat -c'
+alias vi='vim'
+alias vis='vim "+set si"'
+
+alias home='cd ~'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias rmd='/bin/rm  --recursive --force --verbose '
+
+alias rebootsafe='shutdown -r now'
+alias rebootforce='shutdown -r -n now'
+
+alias groups_list="cut -d: -f1 /etc/group"
