@@ -1,0 +1,33 @@
+
+URxvt.background:  #24364b
+URxvt.foreground:   #31d07b
+URxvt.colorBD:        #2bff9f
+URxvt.highlightColor:   #5f217a
+URXvt.highlightTextColor:  #d5d5d5
+! URxvt.cursorColor: #
+! URxvt.pointerColor: #
+! URxvt.pointerColor2: #
+! URxvt.pointerShape: bool
+! URxvt.borderColor:    #
+! URxvt.fading:  %0-100
+! URxvt:fadeColor:  #
+! URxvt.url-select.underline: true
+URxvt.colorUL:            #141c25
+! URxvt*underlineColor: #
+! URxvt.colorBL:    #
+URxvt.color0:   #2c3f58
+URxvt.color1:   #be2d26
+URxvt.color2:   #1a9172
+URxvt.color3:   #db8e27
+URxvt.color4:   #325d96
+URxvt.color5:   #8a5edc
+URxvt.color6:   #35a08f
+URxvt.color7:   #23d183
+URxvt.color8:   #336889
+URxvt.color9:   #dd5944
+URxvt.color10:  #31d07b
+URxvt.color11:  #e7d84b
+URxvt.color12:  #34a6da
+URxvt.color13:  #ae6bdc
+URxvt.color14:  #42c3ae
+URxvt.color15:  #d5d5d5
