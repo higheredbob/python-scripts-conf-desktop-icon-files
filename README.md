@@ -10,9 +10,10 @@ xfce-panel (bot & right), as well as the menu.
 <img src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/urxvt.jpg" data-canonical-src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/urxvt.jpg" width="400" height="300" /> <img src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/pcmanfm.jpg" data-canonical-src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/pcmanfm.jpg" width="470" height="420" />
 
 # Urxvt theme is using Galaxy for backdrop and sexy for commandline  
-<img src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/beauty&butterflies.jpg" data-canonical-src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/beauty&butterflies.jpg" width="1024" height="780" />
+![Butterflies](custom_iconset/images/beauty&butterflies.jpg?raw=true)
+
 # Urxvt theme is stinkypinky and fukmeright for commandline
-<img src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/bushiboje.jpg" data-canonical-src="https://github.com/higheredbob/python-scripts-conf-desktop-icon-files/blob/master/custom_iconset/images/bushiboje.jpg" width="1024" height="780" />
+![Budo](custom_iconset/images/bushiboje.jpg?raw=true)
 
 
 # python_* files | sqlite | seam_carve | base64decode
