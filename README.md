@@ -1,4 +1,4 @@
-![Gentoo](custom_iconset/images/Icompile.svg?raw=true)
+![Gentoo](custom_iconset/images/Icompile.png?raw=true)
 # python-scripts-conf-desktop-icon-files
 A place for all my scripts, programs, customizations, inflicted on my gentoo/funtoo hybrid
 
